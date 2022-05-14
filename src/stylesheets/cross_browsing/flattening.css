@@ -1,0 +1,276 @@
+:root {
+    /* 
+        *** 띄어쓰기 안한 글자가 삐져나가는 현상을 막음
+        *** Prevents unspaced characters from sticking out.
+    */
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+    /* 
+        *** 모바일 포커스 삭제
+        *** Prevents unspaced characters from sticking out.
+    */
+
+    -webkit-tap-highlight-color: transparent;
+
+    /* 
+        *** 서비스 특성에 맞게 변경해서 사용
+        *** Change and use according to service characteristics
+    */
+
+    /* 
+        The point color
+            * brand(accent) color
+                * primary color : main brand color - usable 60% ~ 70%;
+                * action color : interaction element - Usually, It is complementary to the main brand color.
+            * text color
+                * text black : main text, title
+                * text body : description, paragraph, sub text
+            * background
+            * border : touchable element
+            * disbled : disabled element
+    */
+
+    /* 
+        --color_primary: rgba(0, 0, 0, 0.8);
+        --color_primary_dark: rgba(0, 0, 0, 1);
+        --color_primary_light: rgba(0, 0, 0, 0.5);
+        --color_action: rgba(255, 255, 0, 1);
+        --color_text_title: rgba(34, 34, 34, 1);
+        --color_text_paragraph: rgba(102, 102, 102, 0.4);
+        --color_text_placeholder: rgba(153, 153, 153, 0.2);
+        --color_text_disabled: rgba(203, 203, 203, 0.6);
+        --color_background: rgba(0, 0, 0, 0.03);
+        --color_border: rgba(0, 0, 0, 0.2); 
+    */
+
+    /* 
+        *** 가급적 변경 금지 
+        *** Do not change as much as possible
+    */
+
+    /* 
+        The achromatic color
+            * black
+            * white
+            * gray
+    */
+
+    --color_black: rgba(13, 13, 13, 1);
+    --color_white: rgba(245, 245, 245, 1);
+    --color_gray: rgba(128, 128, 128, 1);
+    --color_gray_dark: rgba(105, 105, 105, 1);
+    --color_gray_light: rgba(204, 204, 204, 1);
+    /*
+        The four basic web colors 
+            * 'danger' gives users an 'alert'
+            * 'warning' is a light warning. The user may ignore this color.
+            * 'info' is used for the purpose of providing information. It stands out.
+            * 'grey' : 'disabled' sign color
+    */
+
+    --color_danger: rgba(244, 67, 54, 1);
+    --color_success: rgba(76, 175, 80, 1);
+    --color_warning: rgba(255, 235, 59, 1);
+    --color_info: rgba(33, 150, 243, 1);
+    --color_disabled: rgba(153, 153, 153, 1);
+}
+
+/* 
+    1. 모든 여백과 간격, 블록사이즈를 평탄화시킨다.
+    1. Flatten all margins, gaps, and block sizes.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+*,
+*::after,
+*::before {
+    font: inherit;
+    color: inherit;
+    line-height: 1.35;
+    letter-spacing: -0.2px;
+    transition: all 0.2s ease-out;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* 
+    2. 컨테이너 시멘틱태그들을 평탄화 시킨다.
+    2. Flatten container the semantic tags.
+*/
+
+header,
+aside,
+main,
+footer,
+section,
+article {
+    display: block;
+}
+
+/* 
+    3. a, button, input[type=button/submit] 배경을 없애고, 테두리를 삭제한다.
+    3. Remove the background and delete the border.
+*/
+
+a,
+button,
+input[type=button],
+input[type=submit] {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 
+    4. img및 미디어관련 태그는 여백을 없애고, 비율에 따라 사이즈를 조정한다.
+    4. Img and media-related tags eliminate margins and resize according to the ratio.
+*/
+
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+picture,
+embed,
+object {
+    display: block;
+    vertical-align: middle;
+}
+
+img,
+picture,
+video,
+svg {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* 
+    5. 리스트 디자인 삭제
+    5. Delete list design.
+
+*/
+
+menu,
+nav,
+ol,
+ul {
+    list-style: none;
+    padding: 0
+}
+
+/* 
+    6. 테이블 디자인 삭제
+    6. Deleting a table design
+
+*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/* 
+    *** 예외 사항
+    *** Exceptions
+*/
+
+/* hr태그는 커스텀해서 쓸 것이므로 평탄화 시킨다. The <hr /> will be customized, so flatten it*/
+
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+/* 텍스트 강조 태그는 비교적 강조하여야 한다. Text highlighting tags should be relatively emphasized. */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+small,
+sup,
+sub {
+    font-weight: lighter;
+}
+
+/* 히든 속성은 보이지 않게 한다. The hidden property is invisible. */
+
+[hidden] {
+    display: none
+}
+
+/* disable 속성은 사용자로 하여금 상호작용을 최소화하여야 한다. The disable attribute requires the user to minimize interaction. */
+
+:disabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+/* 이미지 요소가 렌더링되지 않을 때. When an image element is not rendered*/
+img:not([src]) {
+    display: inline-block;
+    opacity: 0.3;
+    border: 2px dashed var(--color_disabled);
+}
+
+img[src=""] {
+    display: inline-block;
+    opacity: 0.3;
+    border: 2px dashed var(--color_disabled);
+}
+
+
+/* 스크롤은 커스텀해서 쓸 것이므로 평탄화 시킨다. The scroll will be customized and used, so flatten it. */
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 100%;
+    border: none;
+    padding: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    display: none;
+    border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: var(--color_gray);
+    border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color_primary);
+}
