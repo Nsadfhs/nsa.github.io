@@ -1,12 +1,12 @@
 # nsa.github.io
 Nsa`s bootstrap cdn 
 
-2022.05.12
+## 2022.05.12
     ted`s project start
         - create reset css (browser normalized)
-2022.05.15
+## 2022.05.15
     All reset css collections on the net
-        - meyerweb`s reset css (https://meyerweb.com/eric/tools/css/reset/)
+        - [meyerweb`s reset css](https://meyerweb.com/eric/tools/css/reset/)
         - necolas`s normalize.css (https://github.com/necolas/normalize.css/blob/master/normalize.css)
         - adorableCSS`s reset css
         - sanitize`s reset css (https://unpkg.com/sanitize.css@13.0.0/sanitize.css)
