@@ -1,4 +1,5 @@
 @import url("./src/stylesheets/cross_browsing/flattening.css");
+@import url("./src/stylesheets/web_font/typogrphy.css");
 
 :root {
     --color_primary: rgba(0, 0, 0, 0.8);
@@ -10,10 +11,11 @@
     --color_text_placeholder: rgba(153, 153, 153, 0.2);
     --color_text_disabled: rgba(203, 203, 203, 0.6);
     --color_background: rgba(0, 0, 0, 0.03);
-    --color_border: rgba(0, 0, 0, 0.2); 
+    --color_border: rgba(0, 0, 0, 0.2);
 }
 
-html,body {
+html,
+body {
     height: 100%;
 }
 
@@ -39,4 +41,9 @@ html,body {
 
 .main-wrap {
     flex: 1;
+}
+
+img {
+    width: auto;
+    height: 100%;
 }
