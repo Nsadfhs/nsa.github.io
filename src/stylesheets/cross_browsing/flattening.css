@@ -146,7 +146,6 @@ input[type=submit] {
     4. Img and media-related tags eliminate margins and resize according to the ratio.
 */
 
-
 img,
 svg,
 video,
@@ -157,7 +156,6 @@ picture,
 embed,
 object {
     display: block;
-    vertical-align: middle;
 }
 
 img,
@@ -168,6 +166,11 @@ svg {
     width: auto;
     height: auto;
     object-fit: contain;
+}
+
+img {
+    width: auto;
+    height: 100%;
 }
 
 /* 

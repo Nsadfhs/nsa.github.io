@@ -14,11 +14,6 @@
     --color_border: rgba(0, 0, 0, 0.2);
 }
 
-html,
-body {
-    height: 100%;
-}
-
 .wrapper {
     display: flex;
 }
@@ -41,9 +36,4 @@ body {
 
 .main-wrap {
     flex: 1;
-}
-
-img {
-    width: auto;
-    height: 100%;
 }
