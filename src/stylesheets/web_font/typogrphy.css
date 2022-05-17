@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+    src: local("Roboto"),
+        url("../../../public/fonts/Roboto-Regular.woff") format("woff"),
+        url("../../../public/fonts/Roboto-Regular.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400 500;
+    font-display: fallback;
+    src: local("Roboto"),
+        url("../../../public/fonts/Pretendard/regular/Pretendard-Regular.woff2") format("woff2"),
+        url("../../../public/fonts/Pretendard/regular/Pretendard-Regular.woff") format("woff"),
+        url("../../../public/fonts/Pretendard/regular/Pretendard-Regular.ttf") format("truetype"),
+        url("../../../public/fonts/Pretendard/regular/Pretendard-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 200 300;
+    font-display: fallback;
+    src: local("Roboto"),
+        url("../../../public/fonts/Pretendard/light/Pretendard-Light.woff2") format("woff2"),
+        url("../../../public/fonts/Pretendard/light/Pretendard-Light.woff") format("woff"),
+        url("../../../public/fonts/Pretendard/light/Pretendard-Light.ttf") format("truetype"),
+        url("../../../public/fonts/Pretendard/light/Pretendard-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600 700;
+    font-display: fallback;
+    src: local("Roboto"),
+        url("../../../public/fonts/Pretendard/bold/Pretendard-Bold.woff2") format("woff2"),
+        url("../../../public/fonts/Pretendard/bold/Pretendard-Bold.woff") format("woff"),
+        url("../../../public/fonts/Pretendard/bold/Pretendard-Bold.ttf") format("truetype"),
+        url("../../../public/fonts/Pretendard/bold/Pretendard-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 800 900;
+    font-display: fallback;
+    src: local("Pretendard"),
+        url("../../../public/fonts/Pretendard/black/Pretendard-Black.woff2") format("woff2"),
+        url("../../../public/fonts/Pretendard/black/Pretendard-Black.woff") format("woff"),
+        url("../../../public/fonts/Pretendard/black/Pretendard-Black.ttf") format("truetype"),
+        url("../../../public/fonts/Pretendard/black/Pretendard-Black.otf") format("opentype");
+}
+
+html,
+body {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Pretendard', sans-serif;
+}
