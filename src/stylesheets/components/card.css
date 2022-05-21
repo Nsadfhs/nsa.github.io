@@ -1,0 +1,60 @@
+.card {
+    display: block;
+    min-width: 100px;
+    min-height: 100px;
+    font-size: 18px;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.card.rounded {
+    border-radius: var(--round);
+}
+
+.card.circle {
+    padding: 1.5rem;
+    border-radius: var(--circle);
+}
+
+.card.gap-1 {
+    padding: 1rem;
+}
+
+.card.gap-2 {
+    padding: 2rem;
+}
+
+.card.gap-3 {
+    padding: 3rem;
+}
+
+.card.gap-xs {
+    padding: 0.5rem;
+}
+
+.card.gap-sm {
+    padding: 0.75rem;
+}
+
+.card.gap-md {
+    padding: 1rem;
+}
+
+.card.gap-lg {
+    padding: 1.5rem;
+}
+
+.card.gap-xl {
+    padding: 2.25rem;
+}
+
+
+.card-title {
+    color: var(--color_text_title);
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+
+.card-paragraph {
+    color: var(--color_text_paragraph);
+}

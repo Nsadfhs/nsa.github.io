@@ -1,5 +1,6 @@
 @import url("./src/stylesheets/cross_browsing/flattening.css");
 @import url("./src/stylesheets/web_font/typogrphy.css");
+@import url("./src/stylesheets/layouts/flex.css");
 
 :root {
     --color_primary: rgba(0, 0, 0, 0.8);
@@ -12,6 +13,16 @@
     --color_text_disabled: rgba(203, 203, 203, 0.6);
     --color_background: rgba(0, 0, 0, 0.03);
     --color_border: rgba(0, 0, 0, 0.2);
+
+    --extra_small: 9px;
+    --small: 12px;
+    --middle: 15px;
+    --large: 18px;
+    --extra_large: 24px;
+
+    --shadow: 0 3px 6px rgba(13, 13, 13, 0.16);
+    --round: 0.5rem;
+    --circle: 50%;
 }
 
 .wrapper {
