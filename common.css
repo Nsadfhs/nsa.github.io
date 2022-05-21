@@ -16,6 +16,7 @@
 
 .wrapper {
     display: flex;
+    flex-direction: column;
 }
 
 .wrapper.row {
@@ -36,4 +37,11 @@
 
 .main-wrap {
     flex: 1;
+}
+
+@media all and (min-width:1024px) {
+    .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
