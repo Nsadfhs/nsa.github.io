@@ -1,0 +1,47 @@
+@import url("./src/stylesheets/cross_browsing/flattening.css");
+@import url("./src/stylesheets/web_font/typogrphy.css");
+
+:root {
+    --color_primary: rgba(0, 0, 0, 0.8);
+    --color_primary_dark: rgba(0, 0, 0, 1);
+    --color_primary_light: rgba(0, 0, 0, 0.5);
+    --color_action: rgba(255, 255, 0, 1);
+    --color_text_title: rgba(34, 34, 34, 1);
+    --color_text_paragraph: rgba(102, 102, 102, 0.4);
+    --color_text_placeholder: rgba(153, 153, 153, 0.2);
+    --color_text_disabled: rgba(203, 203, 203, 0.6);
+    --color_background: rgba(0, 0, 0, 0.03);
+    --color_border: rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper.row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wrapper.nowrap {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.wrapper.column {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-wrap {
+    flex: 1;
+}
+
+@media all and (min-width:1024px) {
+    .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
